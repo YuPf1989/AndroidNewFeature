@@ -15,6 +15,7 @@ import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.rain.androidnewfeature.ui.ButtonClickEffectActivity;
 import com.rain.androidnewfeature.util.ToastUtil;
 
 import java.io.File;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         findViewById(R.id.btn_install).setOnClickListener(this);
+        findViewById(R.id.btn_click_effect).setOnClickListener(this);
     }
 
     @TargetApi(Build.VERSION_CODES.M)
@@ -55,6 +57,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_install:
                 checkInstallPermissionAndInstall();
                 break;
+
+            case R.id.btn_click_effect:
+                startActivity(new Intent(this,ButtonClickEffectActivity.class));
+                break;
+
+            default:
+
         }
     }
 

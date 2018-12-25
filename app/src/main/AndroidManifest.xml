@@ -23,6 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.ButtonClickEffectActivity" />
 
         <!--安卓7.0及以上需配置provider -->
         <provider

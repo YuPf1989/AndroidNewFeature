@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/ripple_red_no_mask"
+        android:text="没有边界的ripple" />
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_red_with_mask"
+        android:text="带边界的ripple" />
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_red_with_shapemask"
+        android:text="ripple使用指定的shape" />
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_red_with_selector"
+        android:text="ripple使用selector" />
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="默认带有边界的ripple" />
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/btn6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:text="默认不带有边界的ripple" />
+
+</LinearLayout>
